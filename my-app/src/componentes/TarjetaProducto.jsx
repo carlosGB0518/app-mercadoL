@@ -1,14 +1,18 @@
+import './TarjetaProducto.css';
+import { Link } from 'react-router-dom';
+
 const TarjetaProducto = ({ producto }) => {
   return (
-    <div className="border rounded shadow p-4 hover:shadow-lg transition">
-      <img src={producto.imagen} alt={producto.nombre} className="w-full h-40 object-cover mb-2 rounded" />
-      <h3 className="font-semibold text-lg">{producto.nombre}</h3>
-      <p className="text-green-600 font-bold">${producto.precio}</p>
-      <button className="bg-blue-500 text-white px-4 py-2 mt-2 rounded hover:bg-blue-600">
-        Comprar
-      </button>
+    <div className="tarjeta-producto">
+      <img src={producto.imagen} alt={producto.nombre} className="producto-imagen" />
+      <h3 className="producto-nombre">{producto.nombre}</h3>
+      <p className="producto-precio">${producto.precio}</p>
+      <Link to="/registro">
+        <button className="boton-comprar">Comprar</button>
+      </Link>
     </div>
   );
 };
 
 export default TarjetaProducto;
+

@@ -1,0 +1,44 @@
+.tarjeta-producto {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: box-shadow 0.2s;
+}
+
+.tarjeta-producto:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.producto-imagen {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+
+.producto-nombre {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.producto-precio {
+  color: green;
+  font-weight: bold;
+  margin: 4px 0;
+}
+
+.boton-comprar {
+  background-color: #3483fa;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.boton-comprar:hover {
+  background-color: #2968c8;
+}

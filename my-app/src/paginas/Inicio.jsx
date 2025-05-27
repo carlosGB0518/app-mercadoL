@@ -1,8 +1,9 @@
 import ListaProductos from '../componentes/ListaProductos';
+import './Inicio.css';
 
 const Inicio = () => {
   return (
-    <main>
+    <main className="inicio">
       <ListaProductos />
     </main>
   );

@@ -1,4 +1,5 @@
 import TarjetaProducto from './TarjetaProducto';
+import './ListaProductos.css';
 
 const productosSimulados = [
   {
@@ -23,7 +24,7 @@ const productosSimulados = [
 
 const ListaProductos = () => {
   return (
-    <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-4">
+    <section className="lista-productos">
       {productosSimulados.map(producto => (
         <TarjetaProducto key={producto.id} producto={producto} />
       ))}

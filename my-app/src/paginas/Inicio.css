@@ -1,0 +1,5 @@
+.inicio {
+    width: 100vw; /* Ocupar el ancho total del viewport */
+  box-sizing: border-box;
+  flex: 1;
+}
