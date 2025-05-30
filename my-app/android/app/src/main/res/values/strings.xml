@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">AppMercadoL</string>
+    <string name="title_activity_main">AppMercadoL</string>
+    <string name="package_name">com.replica.appmercadol</string>
+    <string name="custom_url_scheme">com.replica.appmercadol</string>
+</resources>
