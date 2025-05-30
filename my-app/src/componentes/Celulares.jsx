@@ -60,28 +60,28 @@ const productos = [
   },
   {
     id: 3,
-    imagen: 'https://i.ibb.co/s93QHdZz/image.png',
+    imagen: 'https://i.ibb.co/rKGDKBXs/image.png',
     
     precio: 1200,
     descripcion: 'Un producto esencial con un excelente rendimiento.',
   },
   {
     id: 3,
-    imagen: 'https://i.ibb.co/s93QHdZz/image.png',
+    imagen: 'https://i.ibb.co/chBSnmWy/image.png',
     
     precio: 1200,
     descripcion: 'Un producto esencial con un excelente rendimiento.',
   },
   {
     id: 3,
-    imagen: 'https://i.ibb.co/s93QHdZz/image.png',
+    imagen: 'https://i.ibb.co/chBSnmWy/image.png',
     
     precio: 1200,
     descripcion: 'Un producto esencial con un excelente rendimiento.',
   },
   {
     id: 3,
-    imagen: 'https://i.ibb.co/s93QHdZz/image.png',
+    imagen: 'https://i.ibb.co/chBSnmWy/image.png',
     
     precio: 1200,
     descripcion: 'Un producto esencial con un excelente rendimiento.',

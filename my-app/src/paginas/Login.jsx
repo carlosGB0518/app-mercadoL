@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { supabase } from './supabaseClient';
+import { supabase } from '../supabaseClient';
 import './Login.css';
 
 function Login() {
@@ -31,7 +31,7 @@ function Login() {
     // 2. Obtener datos del usuario desde tabla personalizada
     const { data: usuario, error: errorUsuario } = await supabase
       .from('usuarios')
-      .select('*')
+      .select('rol')
       .eq('id', userId)
       .single();
 
@@ -41,10 +41,14 @@ function Login() {
       return;
     }
 
-    console.log('Datos del usuario:', usuario);
+    console.log('Rol del usuario:', usuario.rol);
 
-    // 3. Redirigir a la página principal
-    navigate('/');
+    // 3. Redirigir según el rol
+    if (usuario.rol === 'admin') {
+      navigate('/admin');
+    } else {
+      navigate('/home');
+    }
   };
 
   return (

@@ -2,9 +2,8 @@ import React from 'react';
 import TarjetaProducto from './TarjetaProducto';
 import './ListaProductos.css'; // Asegúrate de importar el CSS aquí
 
-
-  const productos = [
-  {
+const productos = [
+{
     id: 1,
     nombre: 'Toyota Corolla 2021',
     imagen: 'https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg?auto=compress&cs=tinysrgb&w=600',

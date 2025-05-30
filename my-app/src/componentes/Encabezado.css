@@ -3,20 +3,21 @@
   padding: 1rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 1rem;
   width: 100%;
   box-sizing: border-box;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
   .encabezado {
     flex-direction: row;
     justify-content: space-between;
+    text-align: left;
   }
 }
-
 
 .logo {
   font-size: 24px;
@@ -35,12 +36,18 @@
 
 .navegacion {
   display: flex;
-  gap: 16px;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  width: 100%;
 }
 
 .navegacion a {
   color: #333;
   text-decoration: none;
+  font-size: 0.95rem;
+  padding: 4px 8px;
+  white-space: nowrap;
 }
 
 .navegacion a:hover {

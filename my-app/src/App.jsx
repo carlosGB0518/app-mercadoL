@@ -7,7 +7,6 @@ import Registro from './paginas/Registro';
 import Login from './paginas/Login';
 import Carrito from './paginas/Carrito';
 import Pago from './paginas/Pago';
-
 import ListaProductos from './componentes/ListaProductos';
 import Celulares from './componentes/Celulares';
 import Computacion from './componentes/Computacion';
@@ -15,6 +14,7 @@ import Televisores from './componentes/Televisores';
 import Carros from './componentes/Carros';
 import Consolas from './componentes/Consolas';
 import Ofertas from './componentes/Ofertas';
+import Admin from './paginas/Admin';
 
 
 function App() {
@@ -39,6 +39,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/carrito" element={<Carrito carrito={carrito} />} />
         <Route path="/pago" element={<Pago />} />
+        <Route path="/admin" element={<Admin />} />
       </Routes>
     </BrowserRouter>
   );
