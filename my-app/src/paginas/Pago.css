@@ -1,0 +1,46 @@
+.pago-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.pago-input {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.pago-confirmar {
+  background-color: #ffcc00;
+  color: black;
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.pago-confirmar:hover {
+  background-color: #f4c200;
+}
+
+.pago-subtitulo {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.pago-exito {
+  margin-top: 2rem;
+  background-color: #e0ffe0;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.pago-error {
+  color: red;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}

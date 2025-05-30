@@ -1,80 +1,82 @@
 .carrito-contenedor {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
-  font-family: Arial, sans-serif;
+  padding: 24px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .carrito-titulo {
-  font-size: 24px;
+  font-size: 28px;
+  text-align: center;
   margin-bottom: 20px;
 }
 
 .carrito-vacio {
-  color: #666;
+  text-align: center;
+  font-size: 18px;
+  color: #777;
 }
 
 .carrito-lista {
   display: flex;
-  flex-direction: column;
+  flex-wrap: nowrap; /* Mostrar productos en una línea */
+  overflow-x: auto;   /* Scroll horizontal si hay muchos */
   gap: 16px;
+  padding-bottom: 16px;
 }
 
 .carrito-producto {
-  display: flex;
-  align-items: center;
-  background-color: #fff;
+  min-width: 220px;
+  max-width: 220px;
+  background-color: #f9f9f9;
   border: 1px solid #ddd;
-  border-radius: 10px;
+  border-radius: 8px;
   padding: 12px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .carrito-imagen {
-  width: 90px;
-  height: 90px;
-  object-fit: contain;
-  margin-right: 20px;
+  width: 180px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
 }
 
 .carrito-info {
-  flex-grow: 1;
+  text-align: center;
+  margin-top: 8px;
 }
 
 .carrito-nombre {
   font-size: 16px;
-  font-weight: bold;
-  margin-bottom: 6px;
+  margin: 6px 0;
 }
 
 .carrito-precio {
-  color: #f5a623;
+  color: #27ae60;
   font-weight: bold;
-}
-
-.carrito-eliminar {
-  background: none;
-  border: none;
-  color: #3483fa;
-  cursor: pointer;
-  font-size: 14px;
 }
 
 .carrito-total {
-  margin-top: 24px;
-  text-align: right;
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
 }
 
 .carrito-comprar {
-  margin-top: 12px;
-  padding: 10px 20px;
-  background-color: #ffe600;
+  background-color: #3483fa;
+  color: white;
   border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
   border-radius: 6px;
-  font-weight: bold;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .carrito-comprar:hover {
-  background-color: #f7d800;
+  background-color: #1d6fe2;
 }
